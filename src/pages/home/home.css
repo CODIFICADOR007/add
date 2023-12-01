@@ -1,0 +1,108 @@
+.mainDiv
+{
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  /*border: 3px solid yellow;*/
+}
+
+.contentDiv
+{
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contentDiv img
+{
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  transition: transform 0.8s;
+  object-fit: cover;
+}
+
+.contentDiv:hover img{
+  transform: scale(1.5)
+}
+
+
+
+
+.home-card-title
+{
+  color: white;
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 3vw;
+}
+
+.titleContainer h1
+{
+  color: white;
+}
+
+.messDiv
+{
+ 
+  left: 10px;
+  top: 10px;
+}
+
+.gymDiv
+{
+  right: 10px;
+  top: 10px;
+}
+
+.MessDiv
+{
+  left: 10px;
+  bottom: 10px;
+}
+
+.roomDiv
+{
+  bottom: 10px;
+  right: 10px;
+}
+
+@media only screen and (max-width:950px)
+{
+  .mainDiv
+  {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    transform: none;
+
+  }
+
+  .contentDiv
+  {
+    position: static;
+    width: 100%;
+    height: 300px;
+    margin: 15px;
+  }
+
+  .home-card-title
+  {
+    font-size: 40px;
+  }
+}
